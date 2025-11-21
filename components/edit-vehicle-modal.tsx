@@ -127,7 +127,11 @@ export default function EditVehicleModal({ isOpen, onClose, vehicle, onEdit }: P
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    onEdit(formData)
+    const updatedVehicle = {
+      ...formData,
+      image_urls: (formData.image_urls && formData.image_urls.length > 0) ? formData.image_urls : ['/drive4less.jpg'],
+    }
+    onEdit(updatedVehicle)
     onClose()
   }
 

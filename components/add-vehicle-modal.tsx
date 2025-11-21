@@ -122,7 +122,8 @@ export default function AddVehicleModal({ isOpen, onClose, onAdd }: Props) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    if (formData.brand && formData.model && formData.imageUrls.length > 0) {
+    if (formData.brand && formData.model) {
+      const imageUrls = formData.imageUrls.length > 0 ? formData.imageUrls : ['/drive4less.jpg']
       onAdd({
         brand: formData.brand,
         model: formData.model,
@@ -131,7 +132,7 @@ export default function AddVehicleModal({ isOpen, onClose, onAdd }: Props) {
         mileage: formData.mileage,
         condition: formData.condition,
         status: formData.status,
-        imageUrls: formData.imageUrls,
+        imageUrls: imageUrls,
       })
       setFormData({
         brand: '',
