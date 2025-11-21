@@ -232,14 +232,14 @@ export default function VehicleDetailPage() {
                 {/* CTA Buttons */}
                 <div className="space-y-3 mb-6">
                   <a
-                    href="tel:+260123456789"
+                    href="tel:+260764205331"
                     className="w-full bg-primary text-white py-3 rounded font-semibold hover:bg-accent transition flex items-center justify-center gap-2"
                   >
                     <Phone className="w-4 h-4" />
                     Call Now
                   </a>
                   <a
-                    href="https://wa.me/260123456789"
+                    href="https://wa.me/260764205331"
                     className="w-full bg-secondary text-white py-3 rounded font-semibold hover:bg-black transition flex items-center justify-center gap-2"
                   >
                     <MessageSquare className="w-4 h-4" />
