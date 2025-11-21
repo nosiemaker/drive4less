@@ -1,6 +1,6 @@
 import Navigation from '@/components/navigation'
 import Footer from '@/components/footer'
-import { CreditCard, Wrench, Truck, FileCheck } from 'lucide-react'
+import { CreditCard, Wrench, Truck, FileCheck, DollarSign, Scale } from 'lucide-react'
 
 const services = [
   {
@@ -22,6 +22,16 @@ const services = [
     icon: Truck,
     title: 'Fast Delivery',
     description: 'Delivery in less than 10 days across Zambia. Safe and secure transportation guaranteed.',
+  },
+  {
+    icon: DollarSign,
+    title: 'Vehicle Financing',
+    description: 'Access competitive financing options with flexible terms. We partner with leading banks and financial institutions.',
+  },
+  {
+    icon: Scale,
+    title: 'Legal Representation',
+    description: 'Professional legal support for vehicle documentation, registration, and compliance. Hassle-free paperwork assistance.',
   },
 ]
 
