@@ -110,7 +110,7 @@ export default function VehicleDetailPage() {
                 <div className="bg-card rounded-lg p-6 sticky top-24 space-y-4">
                   <div className="h-10 bg-muted animate-pulse rounded w-3/4" />
                   <div className="h-10 bg-muted animate-pulse rounded w-1/2" />
-                  
+
                   <div className="grid grid-cols-2 gap-4 pb-6 border-b border-border">
                     {[...Array(4)].map((_, i) => (
                       <div key={i}>
@@ -170,7 +170,7 @@ export default function VehicleDetailPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
-                <div className="bg-card rounded-lg overflow-hidden mb-4">
+              <div className="bg-card rounded-lg overflow-hidden mb-4">
                 <img
                   src={currentImage || '/drive4less.jpg'}
                   alt={`${vehicle.brand} ${vehicle.model}`}
@@ -184,11 +184,10 @@ export default function VehicleDetailPage() {
                     <button
                       key={index}
                       onClick={() => setSelectedImageIndex(index)}
-                      className={`rounded-lg overflow-hidden border-2 transition ${
-                        selectedImageIndex === index ? 'border-primary' : 'border-border'
-                      }`}
+                      className={`rounded-lg overflow-hidden border-2 transition ${selectedImageIndex === index ? 'border-primary' : 'border-border'
+                        }`}
                     >
-                        <img
+                      <img
                         src={image.url || '/drive4less.jpg'}
                         alt={`Vehicle view ${index + 1}`}
                         className="w-full h-20 object-cover hover:opacity-75 transition"
@@ -232,14 +231,14 @@ export default function VehicleDetailPage() {
                 {/* CTA Buttons */}
                 <div className="space-y-3 mb-6">
                   <a
-                    href="tel:+260764205331"
+                    href="tel:+260972946078"
                     className="w-full bg-primary text-white py-3 rounded font-semibold hover:bg-accent transition flex items-center justify-center gap-2"
                   >
                     <Phone className="w-4 h-4" />
                     Call Now
                   </a>
                   <a
-                    href="https://wa.me/260764205331"
+                    href="https://wa.me/260972946078"
                     className="w-full bg-secondary text-white py-3 rounded font-semibold hover:bg-black transition flex items-center justify-center gap-2"
                   >
                     <MessageSquare className="w-4 h-4" />

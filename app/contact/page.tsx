@@ -52,10 +52,10 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-card-foreground mb-1">Call / WhatsApp</h3>
                     <div className="flex flex-col">
-                      <a href="tel:+260764205331" className="text-primary hover:underline">
-                        +260 764 205 331
+                      <a href="tel:+260972946078" className="text-primary hover:underline">
+                        +260 972 946 078
                       </a>
-                      <a href="https://wa.me/260764205331" target="_blank" rel="noreferrer" className="text-primary hover:underline mt-1">
+                      <a href="https://wa.me/260972946078" target="_blank" rel="noreferrer" className="text-primary hover:underline mt-1">
                         Message on WhatsApp
                       </a>
                     </div>
